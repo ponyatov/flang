@@ -7,4 +7,4 @@ let project = Environment.CurrentDirectory.Split "/" |> Array.last
 
 let () =
     printfn "Hello %s" Environment.CurrentDirectory
-    project |> dirs.create |> ignore
+    project |> dirs.gen |> giti.gen |> ignore
