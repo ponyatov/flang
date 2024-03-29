@@ -19,6 +19,7 @@ F += $(wildcard lib/*.fs*)
 C += $(wildcard src/*.c*)
 H += $(wildcard inc/*.h*)
 
+# all
 .PHONY: all
 all:
 	dotnet build
@@ -37,6 +38,7 @@ doc:
 .PHONY: install update gz
 install: $(NET_APT) doc gz
 	$(MAKE) update
+# sudo dotnet workload update
 # dotnet tool install fantomas
 update:
 	sudo apt update
