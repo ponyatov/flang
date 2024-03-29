@@ -1,7 +1,16 @@
 module giti
 
 let gen project =
-    System.IO.File.WriteAllLines(
-        config.meta + "/.gitignore",
-        [ "*~"; "*.swp"; "*.log"; "/docs/"; "!.gitignore" ]
-    )
+
+    let git path lines =
+        System.IO.File.WriteAllLines(
+            config.meta + path,
+            lines @ [ "!.gitignore" ]
+        )
+
+    let any dir = git ("/" + dir + "/.gitignore") [ "*" ]
+    let empty dir = git ("/" + dir + "/.gitignore") []
+
+    git "/.gitignore" [ "*~"; "*.swp"; "*.log"; "/docs/" ]
+    List.map any [ "bin"; "tmp" ] |> ignore
+    List.map empty [ ".vscode"; "doc"; "inc"; "src" ] |> ignore

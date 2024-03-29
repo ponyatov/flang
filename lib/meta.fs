@@ -1,6 +1,5 @@
 module Meta
 
-
 open System
 
 let project = Environment.CurrentDirectory.Split "/" |> Array.last
