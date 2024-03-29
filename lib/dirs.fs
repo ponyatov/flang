@@ -1,10 +1,8 @@
 module dirs
 
-let meta = "meta"
-
 let dirs =
-    [ meta ]
-    @ List.map (fun s -> meta + "/" + s) [
+    [ config.meta ]
+    @ List.map (fun s -> config.meta + "/" + s) [
         ".vscode"
         "bin"
         "doc"
@@ -14,7 +12,7 @@ let dirs =
         "tmp"
     ]
 
-let create meta =
+let create project =
     let mk dir = System.IO.Directory.CreateDirectory dir
     List.map mk dirs |> ignore
-    meta
+    project

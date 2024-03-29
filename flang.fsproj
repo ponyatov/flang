@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="lib/config.fs" />
     <Compile Include="lib/dirs.fs" />
     <Compile Include="lib/makefile.fs" />
     <Compile Include="lib/apt.fs" />
