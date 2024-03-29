@@ -22,7 +22,8 @@ H += $(wildcard inc/*.h*)
 # all
 .PHONY: all
 all:
-	dotnet build
+	dotnet run
+# dotnet build
 
 # format
 .PHONY: format
