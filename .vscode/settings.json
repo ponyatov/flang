@@ -13,7 +13,8 @@
     // files
     "files.exclude": {
         "docs/**": true,
-		".vscode/*.log": true
+        ".vscode/*.log": true,
+        "obj/**": true,
 	},
     "files.watcherExclude": {
         "docs/**": true
