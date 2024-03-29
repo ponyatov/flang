@@ -30,6 +30,7 @@ doc:
 .PHONY: install update gz
 install: doc gz
 	$(MAKE) update
+# dotnet tool install fantomas
 update:
 	sudo apt update
 	sudo apt install -uy `cat apt.txt`
