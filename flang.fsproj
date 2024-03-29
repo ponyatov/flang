@@ -3,6 +3,12 @@
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="lib/dirs.fs" />
+    <Compile Include="lib/makefile.fs" />
+    <Compile Include="lib/apt.fs" />
+    <Compile Include="lib/readme.fs" />
+    <Compile Include="lib/sdl.fs" />
+    <Compile Include="lib/cpp.fs" />
     <Compile Include="lib/meta.fs" />
   </ItemGroup>
 </Project>
