@@ -12,7 +12,7 @@ let dirs =
         "tmp"
     ]
 
-let gen project =
+let gen app =
     let mk dir = System.IO.Directory.CreateDirectory dir
     List.map mk dirs |> ignore
-    project
+    app

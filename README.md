@@ -1,2 +1,2 @@
 # flang
-F# workout &amp; gaming cross-compiler
+## F# workout & media/games cross-compiler
