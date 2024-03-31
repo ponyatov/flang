@@ -1,2 +1,6 @@
-# flang
-## F# workout & media/games cross-compiler
+# `flang`
+## cross-compiler library
+
+(c) Dmitry Ponyatov <<dponyatov@gmail.com>> 2024 MIT
+
+github: https://github.com/ponyatov/flang

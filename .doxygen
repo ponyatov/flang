@@ -1,5 +1,5 @@
 PROJECT_NAME           = "flang"
-PROJECT_BRIEF          = "F# workout & media/games cross-compiler"
+PROJECT_BRIEF          = "cross-compiler library"
 PROJECT_LOGO           = doc/logo.png
 HTML_OUTPUT            = docs
 OUTPUT_DIRECTORY       =

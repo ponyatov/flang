@@ -1,7 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <PackageId>flang</PackageId>
+    <Version>0.0.1</Version>
+    <PackageDescription>cross-compiler library</PackageDescription>
+    <Authors>Dmitry Ponyatov &lt;dponyatov@gmail.com&gt;</Authors>
+    <Company>homebrew<Company>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
+    <IsTestProject>true</IsTestProject>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="lib/config.fs" />
