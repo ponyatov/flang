@@ -4,10 +4,13 @@
     <Version>0.0.1</Version>
     <PackageDescription>cross-compiler library</PackageDescription>
     <Authors>Dmitry Ponyatov &lt;dponyatov@gmail.com&gt;</Authors>
-    <Company>homebrew<Company>
+    <Company>homebrew</Company>
+    <PackageTags>embedded;compiler</PackageTags>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <IsTestProject>true</IsTestProject>
+    <IsPackable>false</IsPackable>
+    <GenerateProgramFile>false</GenerateProgramFile>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="lib/config.fs" />
@@ -22,5 +25,11 @@
     <Compile Include="lib/cpp.fs" />
     <Compile Include="lib/meta.fs" />
     <Compile Include="lib/main.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.5.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
   </ItemGroup>
 </Project>
