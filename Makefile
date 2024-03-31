@@ -21,9 +21,13 @@ H += $(wildcard inc/*.h*)
 
 # all
 .PHONY: all
-all:
-	dotnet run -- 1 2 3
-# dotnet build
+all: build
+
+.PHONY: build run
+run:
+	dotnet $@ -- 1 2 3
+build:
+	dotnet $@
 
 # format
 .PHONY: format
