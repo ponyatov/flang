@@ -15,8 +15,8 @@
         "daohong-emilio.yash",
         // F#
         "ionide.ionide-fsharp",
-        // "jmrog.vscode-nuget-package-manager",
-        // "tintoy.msbuild-project-tools",
-        // "formulahendry.dotnet-test-explorer",
+        "jmrog.vscode-nuget-package-manager",
+        "tintoy.msbuild-project-tools",
+        "formulahendry.dotnet-test-explorer",
     ]
 }
