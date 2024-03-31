@@ -6,6 +6,7 @@
   <ItemGroup>
     <Compile Include="lib/config.fs" />
     <Compile Include="lib/AST.fs" />
+    <Compile Include="lib/primitive.fs" />
     <Compile Include="lib/dirs.fs" />
     <Compile Include="lib/giti.fs" />
     <Compile Include="lib/makefile.fs" />
