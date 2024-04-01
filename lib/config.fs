@@ -3,7 +3,7 @@ module config
 // let app = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name
 let app = System.Environment.CurrentDirectory.Split "/" |> Array.last
 
-let brief = "F# workout & media/games cross-compiler"
+let brief = "cross-compiler library"
 
 let author = "Dmitry Ponyatov"
 
