@@ -41,7 +41,7 @@ doc:
 
 # install
 .PHONY: install update gz
-install: $(NET_APT) doc gz
+install: $(NET_APT) doc gz ref
 	$(MAKE) update
 # sudo dotnet workload update
 # dotnet tool install fantomas
@@ -49,6 +49,11 @@ update:
 	sudo apt update
 	sudo apt install -uy `cat apt.txt`
 gz:
+ref: \
+	ref/mini-c/README.md
+
+ref/mini-c/README.md:
+	git clone https://github.com/tgjones/mini-c.git ref/mini-c
 
 .PHONY: dotnet
 dotnet: $(NET_APT)
