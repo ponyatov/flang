@@ -3,4 +3,5 @@ rc
 bin/**
 ref/**
 fw/**
+obj/**
 tmp/**

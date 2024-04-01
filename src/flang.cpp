@@ -1,6 +1,7 @@
 #include "flang.hpp"
 
 SDL_Window* window = nullptr;
+SDL_Surface* surface = nullptr;
 
 enum class Screen : int {
     PosX = SDL_WINDOWPOS_UNDEFINED,
@@ -17,6 +18,13 @@ int main(int argc, char* argv[]) {
                                      (int)Screen::PosX, (int)Screen::PosY,
                                      (int)Screen::Width, (int)Screen::Height,
                                      (int)Screen::Status));
+    assert(surface = SDL_GetWindowSurface(window));
+    SDL_FillRect(surface, NULL, SDL_MapRGB(surface->format, 0x22, 0x22, 0x22));
+    SDL_UpdateWindowSurface(window);
+    SDL_Delay(2000);
+    SDL_DestroyWindow(window);
+    SDL_Quit();
+
     for (int i = 1; i < argc; i++) {  //
         arg(i, argv[i]);
         yyin = fopen(argv[i], "r");

@@ -8,7 +8,6 @@ type Object =
 
 open Xunit
 
-
 // type Num =
 //     inherit Object
 //     val value: float // override
