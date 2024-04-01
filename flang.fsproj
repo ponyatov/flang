@@ -18,11 +18,13 @@
     <Compile Include="lib/primitive.fs" />
     <Compile Include="lib/dirs.fs" />
     <Compile Include="lib/giti.fs" />
+    <Compile Include="lib/cmake.fs" />
     <Compile Include="lib/makefile.fs" />
     <Compile Include="lib/apt.fs" />
     <Compile Include="lib/readme.fs" />
     <Compile Include="lib/sdl.fs" />
     <Compile Include="lib/cpp.fs" />
+    <Compile Include="lib/skelex.fs" />
     <Compile Include="lib/meta.fs" />
     <Compile Include="lib/main.fs" />
   </ItemGroup>
