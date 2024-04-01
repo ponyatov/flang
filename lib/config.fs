@@ -14,3 +14,7 @@ let github = "https://github.com/ponyatov"
 let meta = "meta"
 
 let dotnet = "8.0"
+
+type Screen =
+    | width = 240
+    | height = 320

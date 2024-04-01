@@ -1,6 +1,8 @@
 module giti
 
-let gen app =
+open project
+
+let gen (app: project) =
 
     let git path lines =
         System.IO.File.WriteAllLines(

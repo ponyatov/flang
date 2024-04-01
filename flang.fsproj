@@ -14,6 +14,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="lib/config.fs" />
+    <Compile Include="lib/project.fs" />
     <Compile Include="lib/AST.fs" />
     <Compile Include="lib/primitive.fs" />
     <Compile Include="lib/dirs.fs" />

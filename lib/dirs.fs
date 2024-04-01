@@ -1,5 +1,7 @@
 module dirs
 
+open project
+
 let dirs =
     [ config.meta ]
     @ List.map (fun s -> config.meta + "/" + s) [
@@ -12,7 +14,7 @@ let dirs =
         "tmp"
     ]
 
-let gen app =
+let gen (app: project) =
     let mk dir = System.IO.Directory.CreateDirectory dir
     List.map mk dirs |> ignore
     app

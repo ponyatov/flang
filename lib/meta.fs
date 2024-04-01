@@ -1,11 +1,12 @@
 module Meta
 
 open System
+open project
 
 let gen () =
     printfn $"{config.app} @ {Environment.CurrentDirectory}/{config.meta}"
 
-    config.app
+    project (config.app)
     |> dirs.gen
     |> giti.gen
     |> Cpp.gen

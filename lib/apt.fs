@@ -1,6 +1,8 @@
 module apt
 
-let gen app =
+open project
+
+let gen (app: project) =
     System.IO.File.WriteAllLines(
         config.meta + "/apt.txt",
         [

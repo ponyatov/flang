@@ -7,6 +7,8 @@
 
 #include <iostream>
 
+#include <SDL2/SDL.h>
+
 /// @defgroup main main
 /// @{
 extern int main(int argc, char* argv[]);

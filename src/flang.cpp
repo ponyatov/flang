@@ -13,6 +13,7 @@ enum class Screen : int {
 
 int main(int argc, char* argv[]) {
     arg(0, argv[0]);
+
     assert(!SDL_Init(SDL_INIT_VIDEO || SDL_INIT_AUDIO));
     assert(window = SDL_CreateWindow(argv[0],  //
                                      (int)Screen::PosX, (int)Screen::PosY,

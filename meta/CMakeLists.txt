@@ -30,9 +30,12 @@ BISON_TARGET(parser
 ADD_FLEX_BISON_DEPENDENCY(
 	lexer parser)
 
+find_package(SDL2 REQUIRED)
+include_directories(${SDL2_INCLUDE_DIRS})
+
 add_executable(${APP}
     ${C} ${H}
     ${FLEX_lexer_OUTPUTS} ${BISON_parser_OUTPUTS}
 )
 
-target_link_libraries(${APP} PRIVATE readline)
+target_link_libraries(${APP} PRIVATE readline ${SDL2_LIBRARIES})
